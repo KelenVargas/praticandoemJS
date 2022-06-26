@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><!--cabeçalho-->
+            <h1>Verificador de idade!</h1>
+    </header><!--cabeçalho-->  
+
+
+     <section><!--seção-->
+
+        <div> 
+            <p>Ano nascimento: 
+                <input type="number" name="anonascimento" id="txtano" min = "1900">
+            </p>    <!--campo para informar o  ano de nascimento
+                        que não pode ficar abaixo de 1900-->
+            <p>
+                sexo:
+                <input type="radio" name="radsex" id="masc" checked><!--cria uma caixinha de "radio que já fica marcado"-->
+                <label for ="masc"> Masculino</label>
+                <input type="radio" name="radsex" id="fem" >
+                <label for ="fem"> Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="verificar" onclick= "verificar()"> <!--Criei um botão-->
+            </p>
+                        
+        </div>
+
+        <div id="res">
+            preencha os dados
+        </div>
+        
+     </section> <!--seção-->
+     <footer><!--rodapé-->
+            <p> &copy; Curso em vídeo</p>
+     </footer><!--rodapé-->
+     <script src="script.js"></script>
+     
+</body>
+</html>
